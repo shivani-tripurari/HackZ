@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color:#0c0916 ;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #0c0916;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 84px 40px;
+}
+#nav-prt2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    
+
+}
+#nav h2 i{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+#nav i{
+    font-size: 30px;
+    margin:0px 40px;
+}
+#nav h5{
+    font-size: 16px;
+}
+#nav img{
+    height: 100px;
+}
+#nav #line1{
+    /*margin-right: 0px;*/ 
+    width: 124px;
+    height: 2px;
+    background-color: #fff;
+}
+#nav #line2{
+  /*  margin-left: 0px; */
+    width: 124px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#content{
+    position: relative;
+    height: calc(100% - 164px);
+    width: 100%;
+    background-color: #0c0916;
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+    padding: 120px 100px;
+    width: 36%;
+    height: 100%;
+   
+}
+#center{
+    width: 28%;
+    height: 100%;
+    padding-top: 100px;
+}
+#right{
+    width: 36%;
+    height: 100%;
+    
+}
+#left h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    
+}
+#left h1 span{
+    color: #632ac1;
+}
+#left p{
+    padding: 20px 0px;
+    font-size: 16px;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+#left button{
+    background-color: #632ac1;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 28px;
+}
+#left button i{
+    margin-right: 10px;
+}
+#center-bg{
+    background-image: url(heroimgfinal-removebg-preview\ \(1\).png);
+    height: 90%;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    
+}
+
+#right #elem1{
+    font-family: 'Orbitron', sans-serif;
+
+    position: absolute;
+    top: 400px;
+    padding: 0px 100px;
+}
+#right #elem1 h1 i{
+   /* color: #632ac1;*/
+
+}
+#about{
+    position: relative;
+    height: calc(100%);
+    width: 100%;
+    background-color: #0c0916;
+    display: flex;
+    justify-content: space-between;
+}
+#about #part1{
+    width: 28%;
+    height: 100%;
+    padding-top: 100px;
+}
+#about #part1 #part1-bg{
+    
+    position: absolute;
+    top: 320px;
+    left: 52px;
+    background-image: url(image-removebg-preview.png);
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px; 
+}
+#part2 #attend{
+    position: absolute;
+    top: 520px;
+    left:800px;
+    background-color: #632ac1;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+#part2 #host{
+    position: absolute;
+    top: 520px;
+    left:1100px;
+    background-color: #632ac1;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+#part2 a{
+    text-decoration: none;
+}
