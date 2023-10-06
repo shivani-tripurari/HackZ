@@ -43,15 +43,16 @@
             <div id="box">
               <div id="img-part">
                 <img
-                  src="{{url_for('static',filename='uploads/'+i.imgname)}}"
+                  src="{{url_for('static',filename='uploads/'+i.image)}}"
                   alt="hackimg"
                 />
               </div>
               <div id="description">
                 <h2>{{i.title}}</h2>
-                <h4>{{i.date}}</h4>
-                <p>{{i.description}}</p>
-                <button></button>
+                <h4>{{i.location}}</h4>
+                <button>
+                  <a href="{{url_for('description')}}">Know More</a>
+                </button>
               </div>
             </div>
           </li>
