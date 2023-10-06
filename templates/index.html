@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HashItOut-HackZ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+  <body>
+    <!--________________________________wrapping_class_____________________________-->
+    <div id="main">
+      <div id="nav">
+        <h2><i class="ri-github-fill"></i></h2>
+        <div id="nav-prt2">
+          <a href="#content"><h5>Home</h5></a>
+          <h5>About</h5>
+          <a href="#about"><h5>Start</h5></a>
+
+          <div id="line1"></div>
+          <img src="../static/css/logohackZ-removebg-preview.png" alt="logo" />
+          <div id="line2"></div>
+
+          <a href="https://roadmap.sh/"><h5>Roadmaps</h5></a>
+          <h5>Contact</h5>
+          <a href="https://github.com/shivani-tripurari/HackZ_15"
+            ><h5>Join The Team</h5></a
+          >
+        </div>
+        <i class="ri-mail-fill"></i>
+      </div>
+      <!--_________________________________________Hero____________________________________-->
+      <div id="content">
+        <div id="left">
+          <h1>Unlock Innovation, One <span>Hackathon</span> at a Time</h1>
+          <p>
+            "Empowering students with hackathon listings, hosting platform, and
+            a chatbot assistant for information and tips on hackathons
+            nationwide."
+          </p>
+          <button>
+            <i class="ri-planet-fill"></i> <a href="#about">Start Now</a>
+          </button>
+        </div>
+        <div id="center">
+          <div id="center-bg"></div>
+        </div>
+        <div id="right">
+          <div id="elem1">
+            <h1>Descriptions <i class="ri-arrow-right-double-line"></i></h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div id="part1">
+          <div id="part1-bg"></div>
+        </div>
+        <div id="part2">
+          <button id="attend">
+            <a href="{{url_for('attend')}}">Attend Hackathon</a>
+          </button>
+          <button id="host"><a href="host.html">Host Hackathon</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

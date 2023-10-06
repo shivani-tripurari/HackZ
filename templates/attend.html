@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attend a Hackathon</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/attend.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="top">
+        <a href="/"><i class="ri-arrow-left-fill"></i></a>
+        <h1>Join Telangana's best inperson / online hackathons</h1>
+      </div>
+      <!--_____________________________________Search______________________________________-->
+      <form action="/attend/{{search}}" method="POST">
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="Search for hackathons"
+              name="search"
+            />
+            <button type="submit" class="searchButton">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!--_____________________________________List________________________________________-->
+      <div id="hori-boxes">
+        {%if name%}
+        <ul>
+          {%for i in name%}
+          <li>
+            <div id="box">
+              <div id="img-part">
+                <img
+                  src="{{url_for('static',filename='uploads/'+i.imgname)}}"
+                  alt="hackimg"
+                />
+              </div>
+              <div id="description">
+                <h2>{{i.title}}</h2>
+                <h4>{{i.date}}</h4>
+                <p>{{i.description}}</p>
+                <button></button>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        {%else%}
+        <h3>Please Check The Hackathon Name You Have Entered</h3>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
